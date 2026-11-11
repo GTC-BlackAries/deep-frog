@@ -10,8 +10,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](skill/LICENSE)
 [![Platform](https://img.shields.io/badge/Platform-Agent%20Skill-3E5A33)](skill/SKILL.md)
 
-**Version** `1.0.0` · **Author** [GTC-BlackAries](https://github.com/GTC-BlackAries) · **License** MIT\*
-<sub>\*Bundled fonts under `skill/fonts/` are separately licensed under SIL OFL 1.1, see [FONT-LICENSE.md](skill/fonts/FONT-LICENSE.md).</sub>
+**Version** `1.1.0` · **Author** [GTC-BlackAries](https://github.com/GTC-BlackAries) · **License** MIT\*
+<sub>\*Bundled fonts under `skill/fonts/` are separately licensed under SIL OFL 1.1, see [FONT-LICENSE.md](skill/fonts/FONT-LICENSE.md). The logo in `skill/assets/` is a brand mark, not MIT-licensed artwork — see [LICENSE](skill/LICENSE).</sub>
 
 </div>
 
@@ -112,10 +112,13 @@ deep-frog/
 ├── examples/community-electronics-recycling/   # 真实调研档案（含 critic 原文、审计输出）
 └── skill/                         # ★ skill 本体
     ├── SKILL.md  LICENSE
-    ├── references/  (01-04 四份执行规范)
+    ├── references/  (01-04 四份执行规范；03 = Deep Frog 品牌视觉系统)
     ├── scripts/     (audit_report.py · render_check.py)
+    ├── assets/      (官方 Logo，报告生成时内嵌 data URI)
     └── fonts/       (SIL OFL 1.1)
 ```
+
+**v1.1.0 起**：默认报告皮肤升级为 Deep Frog Brand System（深色品牌侧栏 + 浅色阅读区 + 薄荷绿语义色），每份报告尾部自带品牌引导区——深蛙的产出物本身就是它的招牌。用户自带品牌规范时优先沿用用户规范，不强套。
 
 ## 来源与原创性 · Provenance
 

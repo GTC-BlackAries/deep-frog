@@ -5,7 +5,7 @@ display_name_en: "Deep Frog"
 author: "GTC黑羊 - ToolRadar.cc"
 description: "深度调研与事实核验技能：凡是要下注的问题，先把证据收拾干净。按证据类型多路并行调研、对抗式交叉核验，数字必带口径，冲突数字并列呈现，查不到就写查不到，最终产出可交付的自包含 HTML 调研档案（含口径冲突表、机会判断、未解缺口清单、对用户存量资产的可执行反哺清单）。适用三类决策——要不要投入（赛道/产品线/副业初筛）、要不要信（说法/报告/数据核验）、要不要买或签（工具/软件/供应商/合作方）；也可只跑其中一环：追到原文，看那条被广泛引用的结论到底是不是原文真说了。"
 agent_created: true
-version: 1.0.0
+version: 1.1.0
 description_zh: "深度调研与事实核验：把要下注的问题做成可信的调研档案。多路并行调研 + 对抗式核验 + 误引追查，每个数字带口径，冲突数字并列，查不到就写查不到，最终交付自包含 HTML 调研档案。"
 description_en: "Deep-dive research and fact-checking: turn any bet-worthy question into a trustworthy dossier. Parallel multi-source research, adversarial cross-verification, source tracing; every figure carries its caliber, conflicting numbers are shown side by side, gaps are stated rather than filled. Delivers a self-contained HTML research dossier."
 examples_zh:
@@ -237,8 +237,8 @@ Read   命中 skill 的 SKILL.md + references/
 - 每条给出**发现 → 对现有资产意味着什么 → 建议动作**三段
 - **不要擅自修改用户的 skill**——医疗/法律/金融类内容改动需用户拍板
 
-视觉规范见 `references/03-report-design.md`。
-若用户已有 skill 规定了视觉规范，**沿用用户的规范**，不要套用本 skill 的默认皮肤。
+视觉规范见 `references/03-report-design.md`。没有用户专属视觉规范时，默认使用 **Deep Frog Brand System**：深色品牌侧栏与 Hero、浅色阅读正文、薄荷绿品牌强调色，并使用 `assets/deep-frog-logo.png` 官方 Logo。生成 HTML 时将 Logo 内嵌为 data URI，保持单文件图像可用。
+若用户已有 skill 或项目明确规定了视觉规范，**用户的规范优先**，不要强行套用 Deep Frog 默认皮肤；不得自行重绘或替换官方 Logo。
 
 ### 第 6 步：交付前自检（脚本优先，无 Python 时走人工清单）
 
@@ -299,8 +299,9 @@ python scripts/render_check.py {报告路径}
 |---|---|
 | `references/01-caliber-evidence.md` | 口径清单、证据分级、误引排查表——**核心**，写正文前必读 |
 | `references/02-research-playbook.md` | 多路 agent prompt 模板、交叉核验问法、外部环境约束 |
-| `references/03-report-design.md` | 章节骨架 + 视觉 token + 打印/窄屏要求 |
+| `references/03-report-design.md` | 章节骨架 + Deep Frog 品牌视觉 token + Logo 用法 + 打印/窄屏要求 |
 | `references/04-manual-checklist.md` | **交付前人工核对清单**——`audit_report.py` 的等价物，环境无 Python 时走这条 |
+| `assets/deep-frog-logo.png` | 深蛙官方品牌 Logo；生成报告时内嵌到 HTML，不得擅自重绘或替换 |
 | `LICENSE` | MIT（字体为 SIL OFL 1.1，单独授权，见 fonts 目录） |
 | `scripts/audit_report.py` | 数字与引用静态审计（ERROR 必须清零） |
 | `scripts/render_check.py` | 分章渲染截图验证（规避三个无头浏览器坑） |
