@@ -1,0 +1,56 @@
+[
+  {
+    "file": "quicksand-latin-ext.woff2",
+    "family": "Quicksand",
+    "subset": "latin-ext",
+    "style": "normal",
+    "weight": "400700",
+    "bytes": 26616,
+    "sha256": "b5a37861949c4489"
+  },
+  {
+    "file": "quicksand-latin.woff2",
+    "family": "Quicksand",
+    "subset": "latin",
+    "style": "normal",
+    "weight": "400700",
+    "bytes": 28244,
+    "sha256": "2add7d60b1cd2ab8"
+  },
+  {
+    "file": "nunito-latin-ext-italic.woff2",
+    "family": "Nunito",
+    "subset": "latin-ext",
+    "style": "italic",
+    "weight": "2001000",
+    "bytes": 39072,
+    "sha256": "1bb48a49c837d76a"
+  },
+  {
+    "file": "nunito-latin-italic.woff2",
+    "family": "Nunito",
+    "subset": "latin",
+    "style": "italic",
+    "weight": "2001000",
+    "bytes": 41760,
+    "sha256": "6cfcc3786d5ba3b5"
+  },
+  {
+    "file": "nunito-latin-ext.woff2",
+    "family": "Nunito",
+    "subset": "latin-ext",
+    "style": "normal",
+    "weight": "2001000",
+    "bytes": 35588,
+    "sha256": "2c8d792869818ecb"
+  },
+  {
+    "file": "nunito-latin.woff2",
+    "family": "Nunito",
+    "subset": "latin",
+    "style": "normal",
+    "weight": "2001000",
+    "bytes": 39128,
+    "sha256": "ba344451eab25b21"
+  }
+]
